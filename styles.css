@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand";
+    cursor: pointer;
+}
+
+.calculator {
+    background-color: black;
+    padding: 20px;
+    max-width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid red;
+    box-shadow: 2px 2px 5px lightgreen;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#result {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    font-family: "Quicksand";
+    box-shadow: 2px 2px 4px grey inset;
+    border-radius: 10px;
+}
+
+.buttons {
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+
+.clear {
+    background-color: hotpink;
+    padding: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: none;
+    border-radius: 10px;
+}
+
+.operator {
+    background-color: orangered;
+    padding: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: none;
+    border-radius: 10px;
+}
+
+.number, .decimal {
+    background-color: lightgray;
+    padding: 25px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.equals {
+    background-color: lightgreen;
+    padding: 25px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border: none;
+    border-radius: 10px;
+    grid-row: span 3;
+}

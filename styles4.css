@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand";
+}
+
+/* text: rock, paper, sciss.... */
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: -160px;
+}
+
+/* text: choose your move */
+.choose {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* icons/buttons div */
+.buttons {
+    margin: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* the images themselves */
+#rock, #paper, #scissors {
+    width: 80px;
+    height: 80px;
+    margin: 0px 20px 20px 20px;
+    font-size: 60px;
+    box-shadow: 2px 2px 4px lightslategray;
+    cursor: pointer;
+}
+
+#rock:hover {
+    background-color: red;
+    transition: 1s;
+}
+
+#paper:hover {
+    background-color: blue;
+    transition: 1s;
+}
+
+#scissors:hover {
+    background-color: green;
+    transition: 1s;
+}
+
+/* text: you won!/you lose! */
+#result {
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* text: your score, computer score */
+#scores {
+    font-size: 20px;
+}
+
+/* the your score number */
+#user-score {
+    margin-right: 15px;
+    color: blue;
+}
+
+/* the computer score number */
+#computer-score {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    .choose {
+        font-size: 25px;
+    }
+}

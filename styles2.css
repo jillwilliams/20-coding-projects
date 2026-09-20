@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: url("images/pumpkin-row.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: orangered;
+    font-size: 25px;
+    font-family: "Nosifer";
+    overflow: hidden;
+}
+
+/* text: countdown to halloween */
+h2 {
+    color: orangered;
+    text-shadow: 2px 2px 2px black;
+    margin: -100px auto 30px auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* 2026 */
+.year {
+    font-size: 30px;
+    margin: 30px auto 30px auto;
+    text-shadow: 2px 2px 2px black;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        margin: -200px auto 30px auto;
+        font-size: 30px;
+    }
+    .countdown {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .year {
+        font-size: 25px;
+    }
+    .countdown {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .countdown div::before {
+        bottom: -20px;
+        font-size: 10px;
+        text-shadow: 2px 2px 2px black;
+    }
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    margin: 0px auto 0px auto;
+    position: relative;
+}
+
+.countdown div::before {
+    content: " ";
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.countdown #day::before {
+    content: "DAYS";
+
+}
+
+.countdown #hour::before {
+    content: "HOURS";
+    
+}
+
+.countdown #minute::before {
+    content: "MINUTES";
+    
+}
+
+.countdown #second::before {
+    content: "SECONDS";
+    
+}
+
+
+
+
+
+#day, #hour, #minute, #second {
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 30px;
+
+}
