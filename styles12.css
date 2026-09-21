@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand";
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background-color: black;
+    color: yellow;
+    margin: 20px;
+}
+
+/* text: tip calculator */
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* text: enter the amount.... */
+p {
+    width: 400px;
+    text-align: center;
+    margin:10px auto;
+    margin-bottom: 15px;
+}
+
+/* text: bill amount */
+#label-bill {
+    margin: 20px;
+}
+
+/* input for bill */
+#bill, #tip {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: auto;
+    font-family: inherit;
+    box-shadow: 2px 2px 6px yellow;
+    border-radius: 10px;
+}
+
+/* tip percentage text */
+#tip-percent {
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* button for calculation */
+#calculate {
+    width: 200px;
+    padding: 10px 20px;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    font-family: inherit;
+    background-color: yellow;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#calculate:hover {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    transition: 1s;
+}
+
+/* div for total and $ amount */
+.last-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+/* text: total */
+#total-amount {
+    margin: 0px 20px 30px 20px;
+}
+
+/* the total amount */
+#total {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px 30px 20px;
+    font-size: 25px;
+}

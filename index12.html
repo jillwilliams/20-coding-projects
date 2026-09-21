@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8" Unicode="U+1F334, UTF-8: F0 9F 8C B4" Unicode= "U+1F332, UTF-8: F0 9F 8C B2" Unicode= "U+00A9"  Unicode="U+00A9, UTF-8: C2 A9" Unicode="U+1F440, UTF-8: F0 9F 91 80">
-    <title>Dice Roll App</title>
+    <title>Tip Calculator</title>
     <link HREF="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Shadows+Into+Light|Fresca|Nunito|Yoyu|Iceland|Gravitas One|Arial|Yeseva One|Tagesschrift|du+NSW+ACT+Cursive|BenchNine|Birthstone|Jolly Lodger|Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="./styles11.css">
+    <link rel="stylesheet" href="./styles12.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://kit.fontawesome.com/9f71dab2a2.js" crossorigin="anonymous"></script> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/> -->
@@ -12,25 +12,23 @@
     <!-- <meta name="keywords" content="”> -->
 </head>
 <body>
-    <!-- one: &#9856; , two: &#9857; , three: &#9858; , four: &#9859; , five: &#9860; , six: &#9861;-->
     <div class="container">
-        <h1>Dice Roll Simulator</h1>
-        <div class="dice" id="dice">
-            &#9860;
+        <h1>Tip Calculator</h1>
+        <p>Enter the amount of the bill and what percentage you would like to pay</p>
+        <label for="bill" id="label-bill">Bill Amount:</label>
+        <input type="number" placeholder="Enter Bill Amount" id="bill">
+        <br/>
+        <label for="tip" id="tip-percent">Tip Percentage</label>
+        <input type="number" placeholder="Enter Percentage" id="tip">
+        <br/>
+        <button id="calculate">Calculate</button>
+        <br/>
+        <div class="last-container">
+            <label for="total" id="total-amount">Total:</label>
+            <span id="total">$34</span>
         </div>
-        <button class="roll-button" id="roll-button">
-            Roll Dice
-        </button>
-        <ul id="roll-history">
-            <!-- <li>Roll 1
-                <span>&#9856;</span>
-            </li>
-            <li>Roll 2
-                <span>&#9860;</span>
-            </li> -->
-        </ul>
     </div>
 
-    <script src="app11.js"></script>
+    <script src="app12.js"></script>
 </body>
 </html>
