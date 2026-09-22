@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Raleway";
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: cadetblue;
+    color: white;
+    border: 3px dashed black;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+/* text: bmi calculator */
+.heading {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* text: enter your height */
+.height {
+    margin: 30px 20px 10px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* input field for feet */
+#feet {
+    padding: 10px 20px;
+    width: 120px;
+    height: 50px;
+    margin-left: 29%;
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+/* input field for inches */
+#inches {
+    padding: 10px 20px;
+    width: 120px;
+    height: 50px;
+    margin-right: 25%;
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+}
+
+/* text: enter your weight */
+.weight {
+    margin: 30px 20px 10px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+ /* input element for weight */
+#weight {
+    padding: 10px 20px;
+    width: 120px;
+    height: 50px;
+    /* margin-left: 0%; */
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* the <div> */
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* styling the button */
+#calculate {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+}
+
+/* output field for bmi */
+#answer {
+    font-size: 20px;
+    width: 260px;
+    height: 60px;
+    border: 1px dashed black;
+    text-align: center;
+    margin: 30px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* output field for weight type */
+#weight-condition {
+    font-size: 20px;
+    width: 260px;
+    height: 60px;
+    border: 1px dashed black;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
