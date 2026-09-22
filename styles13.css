@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand";
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* text: Age Calculator */
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+    color: aqua;
+    margin-top: -80px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* text: enter your date of birth */
+#birth {
+    color: aqua;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* calendar div */
+#birthday {
+    padding: 10px 20px;
+    font-family: "Quicksand";
+    color: black;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* button: calculate age */
+#btn {
+    padding: 10px 20px;
+    width: 200px;
+    height: 45px;
+    margin-bottom: 30px;
+    background-color: aqua;
+    color: black;
+    border: 1px black solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: black;
+    color: aqua;
+    border: 1px aqua solid;
+}
+
+/* text return: you are .... */
+#result {
+    color: aqua;
+    font-size: 35px;
+    text-align: center;
+}
