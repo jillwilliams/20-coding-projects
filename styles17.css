@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100vh;
+    background-color: cornsilk;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Shadows Into Light";
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    border: 2px double brown;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* text: Give us your feedback */
+.heading {
+    font-size: 35px;
+    color: brown;
+}
+
+/* text: how did we do today */
+.heading2 {
+    font-size: 30px;
+    color: brown;
+}
+
+/* icon div */
+.icon-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px;
+}
+
+/* faces & words */
+#frowny {
+    padding-right: 30px;
+    color: black;
+}
+
+#neutral {
+    padding-right: 30px;
+    color: black;
+}
+
+#happy {
+    padding: 0px;
+    color: black;
+}
+
+/* the faces themselves */
+#frowny, #neutral, #happy {
+    font-size: 40px;
+    text-align: center;
+}
+
+#frowny:hover, #neutral:hover, #happy:hover {
+    color: green;
+    scale: 1.05;
+    transition: 1s;
+}
+
+/* the words under the icons */
+#unhappy, #meh, #ok {
+    font-size: 20px;
+}
+
+/* button: send review */
+#openBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    font-size: 30px;
+    font-family: inherit;
+    transition: 1s;
+    border-radius: 15px;
+    border: 2px double black;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+#openBtn:hover {
+    background-color: white;
+    color: brown;
+    border: 2px double brown;
+}
+
+/* style the pop up box */
+/* <div> for response */
+dialog {
+    width: 400px;
+    height: 150px;
+    border: 2px double crimson;
+    background-color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* the X button to close the modal box */
+#closeBtn {
+    margin-top: 20px;
+}

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #E8BB0B;
+    font-family: "Quicksand";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 700px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* emoji container div */
+.emoji-container {
+    margin: 20px;
+}
+
+/* color for the faces */
+#angry {
+    color: red;
+}
+
+#frown {
+    color: orange;
+}
+
+#meh {
+    color: blue;
+}
+
+#smile {
+    color: green;
+}
+
+#happy {
+    color: purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#star {
+    font-size: 40px;
+    
+}
+
+
+#star1, #star2, #star3, #star4, #star5 {
+    font-size: 40px;
+    
+}
+
+#filled-in {
+    color: #E8BB0B;
+    font-size: 40px;
+}

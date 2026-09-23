@@ -35,13 +35,4 @@ function calculateBmi() {
     }
 }
 
-
-
-
-
-
-
-
-
-
 claculateButtonEl.addEventListener("click", calculateBmi)

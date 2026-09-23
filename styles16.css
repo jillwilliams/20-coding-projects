@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand";
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border: 2px double black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+/* text: loan calculator */
+.heading {
+    font-size: 35px;
+    margin: 30px auto;
+    color: crimson;
+}
+
+/* text: loan amount */
+.loan-amount {
+    margin-bottom: 20px;
+}
+
+/* loan amount input element */
+#amount {
+    padding: 10px 20px;
+    width: 200px;
+    color: crimson;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* text: interest rate */
+.interest-rate {
+    margin-bottom: 20px;
+}
+
+/* input for interest rate */
+#rate {
+    padding: 10px 20px;
+    width: 200px;
+    color: crimson;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* text: months to pay off... */
+.months-to-pay {
+    margin-bottom: 20px;
+}
+
+/* input for months to pay */
+#months {
+    padding: 10px 20px;
+    width: 200px;
+    color: crimson;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* button */
+#calculate-btn {
+    padding: 10px 20px;
+    width: 200px;
+    color: crimson;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* output, answer */
+#result {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 400px;
+        height: 600px;
+    }
+}

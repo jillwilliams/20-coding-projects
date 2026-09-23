@@ -118,3 +118,22 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+    width: 450px;
+    }
+    #feet {
+        width: 100px;
+        margin-left: 108px;
+        font-size: 15px;
+    }
+    #inches {
+        width: 105px;
+        font-size: 15px;
+    }
+    #weight {
+        width: 110px;
+        font-size: 15px;
+    }
+}
